@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MLLocationSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xX-dy-2hO">
+                    <rect key="frame" x="15" y="10" width="345" height="32"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-p4-beh">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="32"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4h-9j-X3Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="114.5" height="32"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="选择省份  v">
+                                        <color key="titleColor" red="1" green="0.0" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onSelectButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vf1-SA-yIP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL6-gl-wpB">
+                                    <rect key="frame" x="115.5" y="0.0" width="114" height="32"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="选择城市  v">
+                                        <color key="titleColor" red="1" green="0.0" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onSelectButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Dzj-R8-5PB"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3i-LT-XAp">
+                                    <rect key="frame" x="230.5" y="0.0" width="114.5" height="32"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="选择区域  v">
+                                        <color key="titleColor" red="1" green="0.0" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onSelectButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="8J4-Yy-krj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TBW-p4-beh" secondAttribute="trailing" id="BVp-SK-zBy"/>
+                        <constraint firstItem="TBW-p4-beh" firstAttribute="leading" secondItem="3xX-dy-2hO" secondAttribute="leading" id="FGJ-fI-4S7"/>
+                        <constraint firstItem="TBW-p4-beh" firstAttribute="top" secondItem="3xX-dy-2hO" secondAttribute="top" id="Gro-7v-Zdx"/>
+                        <constraint firstAttribute="bottom" secondItem="TBW-p4-beh" secondAttribute="bottom" id="IfG-B6-byP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="hk_cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="hk_borderWith">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="hk_borderColor">
+                            <color key="value" red="1" green="0.0" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3xX-dy-2hO" secondAttribute="trailing" constant="15" id="HL2-9p-8Ux"/>
+                <constraint firstAttribute="bottom" secondItem="3xX-dy-2hO" secondAttribute="bottom" constant="10" id="MQn-8K-F1X"/>
+                <constraint firstItem="3xX-dy-2hO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="SZe-xp-6Di"/>
+                <constraint firstItem="3xX-dy-2hO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="y49-7N-l2F"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button1" destination="G4h-9j-X3Y" id="bvL-Ee-s8A"/>
+                <outlet property="button2" destination="VL6-gl-wpB" id="wOE-by-7xe"/>
+                <outlet property="button3" destination="J3i-LT-XAp" id="inq-hy-4ju"/>
+            </connections>
+        </view>
+    </objects>
+</document>

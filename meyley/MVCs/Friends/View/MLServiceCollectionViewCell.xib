@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MLServiceCollectionViewCell" id="gTV-IL-0wX" customClass="MLServiceCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dsfdl-tx" translatesAutoresizingMaskIntoConstraints="NO" id="VXP-YZ-jhy">
+                        <rect key="frame" x="25" y="20" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="VXP-YZ-jhy" secondAttribute="height" multiplier="1:1" id="9Lt-y1-Z0p"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shiming2" translatesAutoresizingMaskIntoConstraints="NO" id="GvF-eB-tdd">
+                        <rect key="frame" x="85" y="80" width="15" height="15"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ng-kf-Y4k">
+                        <rect key="frame" x="5" y="105" width="115" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.43137254901960786" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt4-fv-h6Q">
+                        <rect key="frame" x="5" y="133" width="115" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="VXP-YZ-jhy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="9hg-R8-0yD"/>
+                <constraint firstAttribute="trailing" secondItem="VXP-YZ-jhy" secondAttribute="trailing" constant="25" id="D8M-EH-b8R"/>
+                <constraint firstItem="Nt4-fv-h6Q" firstAttribute="centerX" secondItem="1ng-kf-Y4k" secondAttribute="centerX" id="ER2-Bt-R2e"/>
+                <constraint firstItem="GvF-eB-tdd" firstAttribute="bottom" secondItem="VXP-YZ-jhy" secondAttribute="bottom" id="Fmg-56-laY"/>
+                <constraint firstItem="GvF-eB-tdd" firstAttribute="trailing" secondItem="VXP-YZ-jhy" secondAttribute="trailing" id="Ghw-iP-sSi"/>
+                <constraint firstAttribute="trailing" secondItem="1ng-kf-Y4k" secondAttribute="trailing" constant="5" id="IL2-kl-vpE"/>
+                <constraint firstItem="Nt4-fv-h6Q" firstAttribute="top" secondItem="1ng-kf-Y4k" secondAttribute="bottom" constant="10" id="PGd-Ao-jt8"/>
+                <constraint firstItem="1ng-kf-Y4k" firstAttribute="centerX" secondItem="VXP-YZ-jhy" secondAttribute="centerX" id="QtA-6w-UT2"/>
+                <constraint firstItem="1ng-kf-Y4k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="XUC-lP-71t"/>
+                <constraint firstItem="VXP-YZ-jhy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="Xyq-1B-cpj"/>
+                <constraint firstItem="1ng-kf-Y4k" firstAttribute="top" secondItem="VXP-YZ-jhy" secondAttribute="bottom" constant="10" id="wbK-q1-VYQ"/>
+                <constraint firstItem="Nt4-fv-h6Q" firstAttribute="width" secondItem="1ng-kf-Y4k" secondAttribute="width" id="z4k-47-ofQ"/>
+            </constraints>
+            <connections>
+                <outlet property="evaluateLabel" destination="Nt4-fv-h6Q" id="rgE-iM-Std"/>
+                <outlet property="headImageView" destination="VXP-YZ-jhy" id="ulr-NZ-hxs"/>
+                <outlet property="nameLabel" destination="1ng-kf-Y4k" id="3dQ-d2-8XF"/>
+                <outlet property="shimingImageView" destination="GvF-eB-tdd" id="dSR-OQ-b9H"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dsfdl-tx" width="60" height="60"/>
+        <image name="shiming2" width="15" height="15"/>
+    </resources>
+</document>

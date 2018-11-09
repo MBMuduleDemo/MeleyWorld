@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_bg" translatesAutoresizingMaskIntoConstraints="NO" id="EeT-mJ-ZJw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_yu" translatesAutoresizingMaskIntoConstraints="NO" id="iwQ-O6-F8V">
+                                <rect key="frame" x="141" y="311" width="92" height="145"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_in_bg" translatesAutoresizingMaskIntoConstraints="NO" id="lnc-iE-AT3">
+                                <rect key="frame" x="113" y="486" width="148" height="61"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0su-Uy-gcg">
+                                <rect key="frame" x="171.5" y="507.5" width="31" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_text" translatesAutoresizingMaskIntoConstraints="NO" id="X9A-ZJ-AON">
+                                <rect key="frame" x="134.5" y="577" width="105" height="13"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="魅力网" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riW-Ae-orV">
+                                <rect key="frame" x="170" y="630" width="34" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WWW.MEYLEY.COM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIz-gI-f2M">
+                                <rect key="frame" x="152.5" y="643.5" width="70.5" height="8.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" white="1" alpha="0.80300315366972475" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="EeT-mJ-ZJw" secondAttribute="bottom" id="2BH-Dm-TKV"/>
+                            <constraint firstItem="lnc-iE-AT3" firstAttribute="top" secondItem="iwQ-O6-F8V" secondAttribute="bottom" constant="30" id="6yP-Fw-aKW"/>
+                            <constraint firstItem="riW-Ae-orV" firstAttribute="centerX" secondItem="eIz-gI-f2M" secondAttribute="centerX" id="7IR-U7-Lk1"/>
+                            <constraint firstItem="EeT-mJ-ZJw" firstAttribute="bottom" secondItem="eIz-gI-f2M" secondAttribute="bottom" constant="15" id="A2H-4N-Uhg"/>
+                            <constraint firstItem="eIz-gI-f2M" firstAttribute="centerX" secondItem="EeT-mJ-ZJw" secondAttribute="centerX" id="E9O-pG-VhY"/>
+                            <constraint firstItem="lnc-iE-AT3" firstAttribute="centerX" secondItem="X9A-ZJ-AON" secondAttribute="centerX" id="Gzc-jZ-8zy"/>
+                            <constraint firstItem="EeT-mJ-ZJw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Jvq-Se-2da"/>
+                            <constraint firstItem="EeT-mJ-ZJw" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="SoT-nD-g3U"/>
+                            <constraint firstItem="0su-Uy-gcg" firstAttribute="centerX" secondItem="lnc-iE-AT3" secondAttribute="centerX" id="dGS-fS-8hi"/>
+                            <constraint firstItem="X9A-ZJ-AON" firstAttribute="top" secondItem="lnc-iE-AT3" secondAttribute="bottom" constant="30" id="fQh-f8-HXJ"/>
+                            <constraint firstItem="X9A-ZJ-AON" firstAttribute="centerX" secondItem="riW-Ae-orV" secondAttribute="centerX" id="iS9-9Y-kjq"/>
+                            <constraint firstItem="iwQ-O6-F8V" firstAttribute="centerX" secondItem="lnc-iE-AT3" secondAttribute="centerX" id="olD-pf-yFn"/>
+                            <constraint firstItem="eIz-gI-f2M" firstAttribute="top" secondItem="riW-Ae-orV" secondAttribute="bottom" id="rs4-WN-4D4"/>
+                            <constraint firstItem="0su-Uy-gcg" firstAttribute="centerY" secondItem="lnc-iE-AT3" secondAttribute="centerY" id="t4R-ng-xjz"/>
+                            <constraint firstItem="riW-Ae-orV" firstAttribute="top" secondItem="X9A-ZJ-AON" secondAttribute="bottom" constant="40" id="vdp-wT-n7n"/>
+                            <constraint firstAttribute="trailing" secondItem="EeT-mJ-ZJw" secondAttribute="trailing" id="xWd-kU-Czp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="start_bg" width="375" height="667"/>
+        <image name="start_in_bg" width="148" height="61"/>
+        <image name="start_text" width="105" height="13"/>
+        <image name="start_yu" width="92" height="145"/>
+    </resources>
+</document>

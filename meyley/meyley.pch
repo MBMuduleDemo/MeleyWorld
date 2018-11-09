@@ -1,0 +1,109 @@
+//
+//  meyley.pch
+//  meyley
+//
+//  Created by chsasaw on 2017/2/19.
+//  Copyright © 2017年 Meyley. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import "HeaderFile.h"
+
+#define ML_MAIN_COLOR                   UIColorFromRGB(0x201341)
+#define ML_SUB_COLOR                    UIColorFromRGB(0xFF6699)
+#define ML_ACCENT_COLOR                 UIColorFromRGB(0xFF0052)
+#define ML_DISABLE_COLOR                 UIColorFromRGB(0xE3E3E3)
+
+#define ML_TEXT_MAIN_COLOR                  UIColorFromRGBA(0x353535CA)
+#define ML_TEXT_SUB_COLOR                   UIColorFromRGBA(0x88888878)
+#define ML_TEXT_LIGHT_COLOR                 UIColorFromRGBA(0xb2b2b24D)
+
+#define ML_BG_MAIN_COLOR                    UIColorFromRGB(0xf2f2f2)
+#define ML_BORDER_COLOR                     UIColorFromRGB(0xe3e3e3)
+
+
+#define ML_SEPERATOR_COLOR UIColorFromRGB(0xF0F0F0);
+
+#define kMLPOSTADDED        @"kMLPOSTADDED"
+#define kMLPOSTSTATUSCHANGED    @"kMLPOSTSTATUSCHANGED"
+#define kMLCOMMENTADDED     @"kMLCOMMENTADDED"
+
+#define LGWechatPayResultNotification @"LGWechatPayResultNotification"
+#define LGRefreshShopingCartGoodsNotification @"LGRefreshShopingCartGoodsNotification"
+
+/* 屏幕尺寸 */
+#define Screen_W   [UIScreen mainScreen].bounds.size.width
+#define Screen_H   [UIScreen mainScreen].bounds.size.height
+
+#define tmpScreenW  MIN(Screen_W, Screen_H)
+#define tmpScreenH  MAX(Screen_W, Screen_H)
+
+#define LGPercent  (tmpScreenW/375.0)
+
+#define viewPix(a) ((a)*LGPercent)
+//状态栏高度
+//#define statusBarHeight  [[UIApplication sharedApplication] statusBarFrame].size.height
+#define statusBarHeight  (tmpScreenH == 812.0 ? 44 : 20)
+
+
+//tabBar高度
+#define tabBarHeight   self.tabBarController.tabBar.frame.size.height
+
+//top高度
+#define topBarHeight   (statusBarHeight+44)
+
+//iPhone X 底部安全距离：34
+#define bottomSafeBarHeight (tmpScreenH == 812.0 ? 34 : 0)
+
+//iPhone X控件的Y另加高度
+#define iPhoneXMargin(a)    (tmpScreenH == 812.0 ? (a) : 0)
+
+
+#define kMaxX(X) CGRectGetMaxX(X)
+#define kMaxY(Y) CGRectGetMaxY(Y)
+#define kMinX(X) CGRectGetMinX(X)
+#define kMinY(Y) CGRectGetMinY(Y)
+
+
+#define LGNSString(a) [NSString stringWithFormat:@"%@",a]
+
+#define kAPIVersion11Later  @available(iOS 11.0, *)
+
+/*  适配文字大小 */
+static inline CGFloat FontSize(CGFloat fontSize){
+    if (tmpScreenW < 375) {
+        return (fontSize-2);
+    }else if (tmpScreenW == 375){
+        return fontSize;
+    }else{
+        return (fontSize+1);
+    }
+}
+
+#define LGFont(fontSize)  [UIFont systemFontOfSize:FontSize(fontSize)]
+
+/* 颜色 */
+#define LGStringColor(string)   [UIColor colorWithString:string]
+#define RGBAColor(r,g,b,a)      [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define RGBColor(r, g, b)       RGBAColor(r,g,b,1.0)
+#define RandomColor             RGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+/* log输出方法 */
+#define LGLogFunction     NSLog(@"%s",__func__)
+
+
+
+
+/** 应用在APPStore上的ID等信息*/
+#define LGAppStoreID  @"1230294213"
+#define LGAppLookupVersionUrl  @"http://itunes.apple.com/lookup?id=1230294213"
+#define LGAppDownloadUrl  @"itms-apps://itunes.apple.com/app/cn/id1230294213?mt=8"
+#define LGAppStoreResponseResult  @"results"
+#define LGAppStoreVersion  @"version"
+
+#endif /* meyley_pch */
+
+
+
+

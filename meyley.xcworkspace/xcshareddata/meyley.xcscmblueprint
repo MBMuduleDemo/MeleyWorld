@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B4031E3761805C9C62AFDE4037D15894C6C3AC5C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B4031E3761805C9C62AFDE4037D15894C6C3AC5C" : 9223372036854775807,
+    "F31992F332375932E72745052C201C858B37BB52" : 9223372036854775807,
+    "1D616F939F857A24B877B76F814D57565049A599" : 9223372036854775807,
+    "CAC9D93803CC5F00A43D06C71F612FE04CB50809" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CF138E0A-C1D3-44E0-8459-A4821210AC68",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B4031E3761805C9C62AFDE4037D15894C6C3AC5C" : "meyley\/",
+    "F31992F332375932E72745052C201C858B37BB52" : "..\/..\/HXWorkspace\/ios\/HXAppPod",
+    "1D616F939F857A24B877B76F814D57565049A599" : "..\/..\/HXWorkspace\/ios\/HXStoreBase",
+    "CAC9D93803CC5F00A43D06C71F612FE04CB50809" : "..\/..\/HXWorkspace\/ios\/HXWebService"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "meyley",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "meyley.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.chsasaw.top:ios\/hxstorebase.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1D616F939F857A24B877B76F814D57565049A599"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.chsasaw.top:ios\/meyley.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B4031E3761805C9C62AFDE4037D15894C6C3AC5C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.chsasaw.top:ios\/hxwebservice.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CAC9D93803CC5F00A43D06C71F612FE04CB50809"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.chsasaw.top:ios\/hxapp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F31992F332375932E72745052C201C858B37BB52"
+    }
+  ]
+}

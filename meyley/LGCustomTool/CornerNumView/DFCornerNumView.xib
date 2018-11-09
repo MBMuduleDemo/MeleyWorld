@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCornerNumView">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center_icon_7Purchasing" translatesAutoresizingMaskIntoConstraints="NO" id="Zdz-AN-yBF">
+                    <rect key="frame" x="0.0" y="0.0" width="132" height="75"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64U-KA-Nag">
+                    <rect key="frame" x="125" y="-7" width="14" height="14"/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="4p2-ku-Hkf"/>
+                        <constraint firstAttribute="width" constant="14" id="Eab-OB-GeN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zdz-AN-yBF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mul-3p-2So"/>
+                <constraint firstAttribute="trailing" secondItem="64U-KA-Nag" secondAttribute="trailing" constant="-7" id="V4G-lV-RBl"/>
+                <constraint firstItem="Zdz-AN-yBF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z2g-7d-YR1"/>
+                <constraint firstAttribute="bottom" secondItem="Zdz-AN-yBF" secondAttribute="bottom" id="aIT-ns-UQf"/>
+                <constraint firstItem="64U-KA-Nag" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-7" id="ap9-X2-VZJ"/>
+                <constraint firstAttribute="trailing" secondItem="Zdz-AN-yBF" secondAttribute="trailing" id="lAE-dd-69Y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="constraints_lbNum_Width" destination="Eab-OB-GeN" id="Mo5-6l-ybB"/>
+                <outlet property="img_bg" destination="Zdz-AN-yBF" id="S5X-XV-hNn"/>
+                <outlet property="lb_num" destination="64U-KA-Nag" id="71l-DG-i4g"/>
+            </connections>
+            <point key="canvasLocation" x="28" y="-31.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="center_icon_7Purchasing" width="22" height="17"/>
+    </resources>
+</document>

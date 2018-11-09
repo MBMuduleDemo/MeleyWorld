@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VO0-Wa-MLl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--宝贝-->
+        <scene sceneID="STs-rh-6nj">
+            <objects>
+                <navigationController id="VO0-Wa-MLl" customClass="HKBaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="宝贝" image="main_buttom_treasure_n" selectedImage="main_buttom_treasure_c" id="TFx-MK-vY0"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ndS-3E-AAV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VPk-yU-gjO" kind="relationship" relationship="rootViewController" id="Gh5-wH-Mtm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YpB-Yh-QMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-881" y="-84"/>
+        </scene>
+        <!--Treasture View Controller-->
+        <scene sceneID="y9a-zx-wWn">
+            <objects>
+                <viewController storyboardIdentifier="MLTreastureViewController" id="VPk-yU-gjO" customClass="MLTreastureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IgS-JH-Dyh"/>
+                        <viewControllerLayoutGuide type="bottom" id="hS7-af-2iR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OR4-PX-X56">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Umz-my-d1a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Umz-my-d1a" firstAttribute="height" secondItem="OR4-PX-X56" secondAttribute="height" id="0oY-mV-2DU"/>
+                            <constraint firstItem="Umz-my-d1a" firstAttribute="width" secondItem="OR4-PX-X56" secondAttribute="width" id="6hY-hJ-PFo"/>
+                            <constraint firstItem="Umz-my-d1a" firstAttribute="centerX" secondItem="OR4-PX-X56" secondAttribute="centerX" id="Kw6-Xy-ojn"/>
+                            <constraint firstItem="Umz-my-d1a" firstAttribute="centerY" secondItem="OR4-PX-X56" secondAttribute="centerY" id="lDw-tM-bZa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lxe-bc-RqA"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJE-XC-Ulz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.200000000000003" y="-84.107946026986511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main_buttom_treasure_c" width="25" height="25"/>
+        <image name="main_buttom_treasure_n" width="25" height="25"/>
+    </resources>
+</document>

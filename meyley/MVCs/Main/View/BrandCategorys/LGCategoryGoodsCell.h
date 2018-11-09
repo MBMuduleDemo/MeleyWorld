@@ -1,0 +1,15 @@
+//
+//  LGCategoryGoodsCell.h
+//  meyley
+//
+//  Created by Bovin on 2018/8/16.
+//  Copyright © 2018年 Meyley. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface LGCategoryGoodsCell : UITableViewCell
+
+@property (nonatomic , strong)NSDictionary *dataDic;
+
+@end
